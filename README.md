@@ -9,4 +9,5 @@ This App downloads a random image and fact from 2 seperate API's and show them b
 
 
 ## Screen Recording
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/60441734/214651511-47f88854-f192-41da-8499-175e1b1385ee.gif)
+
+![ezgif com-gif-maker-2](https://user-images.githubusercontent.com/60441734/214668103-886f0d07-5d4a-42e7-9f8e-ce7f97f88065.gif)
