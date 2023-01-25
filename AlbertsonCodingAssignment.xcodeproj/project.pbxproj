@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		7E2D6B802981A72F00078BB6 /* AlbertsonCodingAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D6B7F2981A72F00078BB6 /* AlbertsonCodingAssignmentApp.swift */; };
-		7E2D6B822981A72F00078BB6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D6B812981A72F00078BB6 /* ContentView.swift */; };
 		7E2D6B842981A73100078BB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E2D6B832981A73100078BB6 /* Assets.xcassets */; };
 		7E2D6B872981A73100078BB6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E2D6B862981A73100078BB6 /* Preview Assets.xcassets */; };
 		7E2D6B912981A73100078BB6 /* AlbertsonCodingAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D6B902981A73100078BB6 /* AlbertsonCodingAssignmentTests.swift */; };
 		7E2D6B9B2981A73100078BB6 /* AlbertsonCodingAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D6B9A2981A73100078BB6 /* AlbertsonCodingAssignmentUITests.swift */; };
 		7E2D6B9D2981A73100078BB6 /* AlbertsonCodingAssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D6B9C2981A73100078BB6 /* AlbertsonCodingAssignmentUITestsLaunchTests.swift */; };
+		7E2D6BB42981A83500078BB6 /* FactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D6BB32981A83400078BB6 /* FactModel.swift */; };
+		7E2D6BB62981A85F00078BB6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D6BB52981A85F00078BB6 /* HomeView.swift */; };
+		7E2D6BB82981A87600078BB6 /* FactImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D6BB72981A87600078BB6 /* FactImageView.swift */; };
+		7E2D6BBA2981A8BA00078BB6 /* CatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D6BB92981A8BA00078BB6 /* CatViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		7E2D6B7C2981A72F00078BB6 /* AlbertsonCodingAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbertsonCodingAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E2D6B7F2981A72F00078BB6 /* AlbertsonCodingAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbertsonCodingAssignmentApp.swift; sourceTree = "<group>"; };
-		7E2D6B812981A72F00078BB6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7E2D6B832981A73100078BB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E2D6B862981A73100078BB6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7E2D6B8C2981A73100078BB6 /* AlbertsonCodingAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbertsonCodingAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,10 @@
 		7E2D6B962981A73100078BB6 /* AlbertsonCodingAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbertsonCodingAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E2D6B9A2981A73100078BB6 /* AlbertsonCodingAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbertsonCodingAssignmentUITests.swift; sourceTree = "<group>"; };
 		7E2D6B9C2981A73100078BB6 /* AlbertsonCodingAssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbertsonCodingAssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7E2D6BB32981A83400078BB6 /* FactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactModel.swift; sourceTree = "<group>"; };
+		7E2D6BB52981A85F00078BB6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7E2D6BB72981A87600078BB6 /* FactImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactImageView.swift; sourceTree = "<group>"; };
+		7E2D6BB92981A8BA00078BB6 /* CatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				7E2D6B7F2981A72F00078BB6 /* AlbertsonCodingAssignmentApp.swift */,
-				7E2D6B812981A72F00078BB6 /* ContentView.swift */,
+				7E2D6BB02981A81200078BB6 /* Views */,
+				7E2D6BB22981A82500078BB6 /* Models */,
+				7E2D6BB12981A81900078BB6 /* ViewModels */,
 				7E2D6B832981A73100078BB6 /* Assets.xcassets */,
 				7E2D6B852981A73100078BB6 /* Preview Content */,
 			);
@@ -125,6 +133,31 @@
 				7E2D6B9C2981A73100078BB6 /* AlbertsonCodingAssignmentUITestsLaunchTests.swift */,
 			);
 			path = AlbertsonCodingAssignmentUITests;
+			sourceTree = "<group>";
+		};
+		7E2D6BB02981A81200078BB6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7E2D6BB52981A85F00078BB6 /* HomeView.swift */,
+				7E2D6BB72981A87600078BB6 /* FactImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7E2D6BB12981A81900078BB6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7E2D6BB92981A8BA00078BB6 /* CatViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7E2D6BB22981A82500078BB6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7E2D6BB32981A83400078BB6 /* FactModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E2D6B822981A72F00078BB6 /* ContentView.swift in Sources */,
 				7E2D6B802981A72F00078BB6 /* AlbertsonCodingAssignmentApp.swift in Sources */,
+				7E2D6BB42981A83500078BB6 /* FactModel.swift in Sources */,
+				7E2D6BB82981A87600078BB6 /* FactImageView.swift in Sources */,
+				7E2D6BBA2981A8BA00078BB6 /* CatViewModel.swift in Sources */,
+				7E2D6BB62981A85F00078BB6 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
