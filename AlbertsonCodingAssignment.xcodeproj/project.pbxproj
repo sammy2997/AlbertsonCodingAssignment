@@ -17,7 +17,6 @@
 		7E2D6BB62981A85F00078BB6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D6BB52981A85F00078BB6 /* HomeView.swift */; };
 		7E2D6BB82981A87600078BB6 /* FactImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D6BB72981A87600078BB6 /* FactImageView.swift */; };
 		7E2D6BBA2981A8BA00078BB6 /* CatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D6BB92981A8BA00078BB6 /* CatViewModel.swift */; };
-		7E2D6BBC2981B2BC00078BB6 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D6BBB2981B2BC00078BB6 /* Network.swift */; };
 		7E2D6BBF2981B5FE00078BB6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D6BBE2981B5FE00078BB6 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +51,6 @@
 		7E2D6BB52981A85F00078BB6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7E2D6BB72981A87600078BB6 /* FactImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactImageView.swift; sourceTree = "<group>"; };
 		7E2D6BB92981A8BA00078BB6 /* CatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewModel.swift; sourceTree = "<group>"; };
-		7E2D6BBB2981B2BC00078BB6 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		7E2D6BBE2981B5FE00078BB6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				7E2D6B7F2981A72F00078BB6 /* AlbertsonCodingAssignmentApp.swift */,
-				7E2D6BBB2981B2BC00078BB6 /* Network.swift */,
 				7E2D6BBD2981B5F200078BB6 /* Helpers */,
 				7E2D6BB02981A81200078BB6 /* Views */,
 				7E2D6BB22981A82500078BB6 /* Models */,
@@ -306,7 +303,6 @@
 			files = (
 				7E2D6B802981A72F00078BB6 /* AlbertsonCodingAssignmentApp.swift in Sources */,
 				7E2D6BB42981A83500078BB6 /* FactModel.swift in Sources */,
-				7E2D6BBC2981B2BC00078BB6 /* Network.swift in Sources */,
 				7E2D6BB82981A87600078BB6 /* FactImageView.swift in Sources */,
 				7E2D6BBF2981B5FE00078BB6 /* Constants.swift in Sources */,
 				7E2D6BBA2981A8BA00078BB6 /* CatViewModel.swift in Sources */,
