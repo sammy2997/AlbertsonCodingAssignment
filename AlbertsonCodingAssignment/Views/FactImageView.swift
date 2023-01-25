@@ -17,7 +17,8 @@ struct FactImageView: View {
             Spacer()
             
             Image(uiImage: image)
-                .imageScale(.large)
+                .resizable()
+                .frame(height: 500)
                 .scaledToFit()
                 .cornerRadius(20)
             

@@ -13,8 +13,9 @@ class CatViewModel: ObservableObject {
     
     // instead of Aync Image for pre ios15 support
     func downloadImage(url: String? = nil, completion:@escaping (UIImage) -> ()) {
+        let catImageUrl = Constants.imageUrl.rawValue + "\(getRandomImageForHeight())"
         
-        guard let url = URL(string: url ?? "https://placekitten.com/300/\(getRandomImageForHeight())") else {
+        guard let url = URL(string: url ?? catImageUrl) else {
             return
         }
         
@@ -24,11 +25,8 @@ class CatViewModel: ObservableObject {
                 return
             }
 
-            DispatchQueue.main.async {
-                let image = UIImage(data: data)
-                completion(image ?? UIImage())
-            }
-
+            let image = UIImage(data: data)
+            completion(image ?? UIImage())
 
         }.resume()
         
@@ -40,7 +38,8 @@ class CatViewModel: ObservableObject {
     }
     
     func loadFacts(url: String? = nil, completion:@escaping (Fact) -> ()) {
-        let urlString: String? = url ?? "https://meowfacts.herokuapp.com/?id=\(UUID().uuidString)"
+        let factsUrl = Constants.factsUrl.rawValue + UUID().uuidString
+        let urlString: String? = url ?? factsUrl
         
         guard let urlString = urlString, let url = URL(string: urlString) else {
             print("Invalid url...")
@@ -53,7 +52,10 @@ class CatViewModel: ObservableObject {
                 return
             }
             
-            guard let response = response as? HTTPURLResponse else { return }
+            guard let response = response as? HTTPURLResponse else {
+                print("Response error: ", APIHandlerError.httpError)
+                return
+            }
             
             if response.statusCode == 200 {
                 guard let data = data else { return }
@@ -61,13 +63,16 @@ class CatViewModel: ObservableObject {
                     do {
                         let decodedFacts = try JSONDecoder().decode(Fact.self, from: data)
                         completion(decodedFacts)
-                    } catch let error {
-                        print("Error decoding: ", error)
+                    } catch _ {
+                        print("Error decoding: ", APIHandlerError.decodeError)
                     }
                 }
             }
         }
         .resume()
     }
-    
+}
+
+enum APIHandlerError: Error {
+    case fetchError, decodeError, httpError
 }
