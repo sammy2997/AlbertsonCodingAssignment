@@ -18,7 +18,7 @@ struct FactImageView: View {
             
             Image(uiImage: image)
                 .resizable()
-                .frame(height: 500)
+                .frame(height: 450)
                 .scaledToFit()
                 .cornerRadius(20)
             
