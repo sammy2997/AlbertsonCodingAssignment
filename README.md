@@ -1,5 +1,5 @@
 # AlbertsonCodingAssignment
-This App downloads a random image and fact from 2 seperate API's and show them both in the UI. It makes a new API call on every screen tap to download a new image with a new fact from both API's.
+This App downloads a random image and fact from 2 seperate API's and show them both in the UI. A new API call is made on every screen tap to download a new image with a new fact from both API's.
 
 
 ## Build tools & versions used
